@@ -33,7 +33,28 @@
 
 ### 2.0 字节流&字符流?
 * 操作单位不一样
-* 前者操作单位为8bit，对应 InputStream & OutputStream
-* 后者操作单位为16bit, 对应 Reader & Writer
+* 前者操作单位为8bit->byte，对应 InputStream & OutputStream
+* 后者操作单位为16bit->char, 对应 Reader & Writer     
 
-###  
+### 2.1 Reader
+```
+read(): Reads a single character.
+read(char[] cbuf): Reads characters into an array.
+read(char[] cbuf, int off, int len): Reads characters into a portion of an array.
+```      
+       
+example :
+```
+      File file = new File(".");
+		  File tmpFile = File.createTempFile("aaa", ".txt",file);
+			FileInputStream fileInputStream = new FileInputStream(tmpFile);
+			byte[] buffer = new byte[1024];
+			int hasread = 0;
+			while((hasread = fileInputStream.read(buffer))>0) {
+				System.out.print(new String(buffer,0,hasread));
+			}
+			tmpFile.deleteOnExit();
+			fileInputStream.close();
+```      
+
+
