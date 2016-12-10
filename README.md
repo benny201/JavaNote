@@ -43,7 +43,7 @@ read(char[] cbuf): Reads characters into an array.
 read(char[] cbuf, int off, int len): Reads characters into a portion of an array.
 ```      
        
-example :
+#### example :
 ```
       File file = new File(".");
 		  File tmpFile = File.createTempFile("aaa", ".txt",file);
