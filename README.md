@@ -65,5 +65,15 @@ example :
      
 #### 2.3 OputStream & Writer     
 
-### 3.0 节点流 & 处理流     
-     
+### 3.0 节点流 & 处理流?     
+* 节点流： 向特定I/O设备读写数据的流；
+* 处理流： 连接或封装已存在的流，用封装后的流实现读写；     
+
+#### 3.1 处理流     
+
+example:     
+```
+FileOutputStream file = new FileOutputStream("test.txt");
+PrintStream ps = new PrintStream(file);
+ps.println(new PrinteStreamTest());
+```
