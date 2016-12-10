@@ -9,7 +9,7 @@
 * Outout Stream: can be worte,but not read 
 * class OutputStream & Writer for out stream,
 
-* Both InputStream & Reader & OutputStream & Writer are abstract base class!!!
+* All InputStream & Reader & OutputStream & Writer are abstract base class!!!
 
 * I/O stream 是对于内存来说的。  
 
