@@ -37,11 +37,11 @@
 * 后者操作单位为16bit->char, 对应 Reader & Writer     
 
 #### 2.1 Reader
-```
-read(): Reads a single character.
-read(char[] cbuf): Reads characters into an array.
-read(char[] cbuf, int off, int len): Reads characters into a portion of an array.
-```      
+
+`read()`: Reads a single character.
+`read(char[] cbuf)`: Reads characters into an array.
+`read(char[] cbuf, int off, int len)`: Reads characters into a portion of an array.
+    
 
 #### 2.2 InputStream
 ```
